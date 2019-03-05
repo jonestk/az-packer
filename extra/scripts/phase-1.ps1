@@ -45,7 +45,7 @@ Write-Output "Start of Phase-1"
 Import-Module ServerManager
 #2016/1709/1803/1809
 if ($global:os -notlike '2019') {
-    Install-WindowsFeature NET-Framework-Core,NET-Framework-Features,PowerShell-V2 -IncludeManagementTools
+   # Install-WindowsFeature NET-Framework-Core,NET-Framework-Features,PowerShell-V2 -IncludeManagementTools
 }
 # 1709/1803/1809/2019
 if ($global:os -notlike '2016') {
